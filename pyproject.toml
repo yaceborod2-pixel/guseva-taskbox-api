@@ -8,8 +8,9 @@ dependencies = [
     "fastapi[standard]>=0.162.0",
 ]
 
-[project.scripts]
-guseva-taskbox-api = "guseva_taskbox_api:main"
+[tool.uv.build-backend]
+module-name = "app"
+module-root = ""
 
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
